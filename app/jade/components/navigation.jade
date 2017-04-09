@@ -1,0 +1,16 @@
+div.navigation
+    div.row
+        div.col-4
+            h3(style="color: gray; font-size: 40px; margin: 0;") LOGO
+        div.col-8.text-right.small-hide
+            button(class="btn btn--medium modalClicker" data-modal="#modalRegister") Utwórz konto
+            button(id="loginButton" class="modalClicker btn btn--medium margin-left" data-modal="#modalLogin") Zaloguj
+        div.col-8.text-right.large-hide
+            button(id="menu-hamburger" class="navigation__hamburger") &#9776;
+
+    div(id="menu" class="navigation__menu")
+        ul
+            li 
+                button(class="btn btn--medium w-small-100 modalClicker" data-modal="#modalRegister") Utwórz konto
+            li 
+                button(id="loginButton" class="modalClicker btn btn--medium w-small-100" data-modal="#modalLogin") Zaloguj

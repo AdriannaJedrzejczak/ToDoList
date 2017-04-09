@@ -1,0 +1,49 @@
+div(class="modal" id="modalWrapper")
+    div(class="modal__content" id="modalLogin")
+        h2.margin-bottom-big Logowanie
+        form
+            div.row
+                div.col-12
+                    label(for="userNameLogin") Login:
+                    input(type="text" id="userNameLogin")
+            div.row
+                div.col-12
+                    label(for="passwordLogin") Hasło:
+                    input(type="text" id="passwordLogin")
+
+            a(href="#") Zapomniane hasło?
+            div.row.text-right.margin-top
+                div.col.col-12
+                    button(type="button" class="btn btn--cancel modalCancel") Anuluj
+                    button(type="submit" class="btn margin-left") Zaloguj
+
+        hr.margin-top-big.margin-bottom-big
+
+        h3.h4 Nie masz jeszcze konta?
+        div.row.text-right
+                div.col-12
+                    button(class="btn btn--medium modalClicker" data-modal="#modalRegister") Utwórz konto
+
+    div(class="modal__content" id="modalRegister")
+        h2.margin-bottom-big Rejestracja
+        form
+            div.row
+                div.col-12
+                    label(for="userNameRegister") Login:
+                    input(type="text" id="userNameRegister")
+            div.row
+                div.col-12
+                    label(for="passwordRegister") Hasło:
+                    input(type="text" id="passwordRegister")
+            div.row
+                div.col-12
+                    label(for="repeatPasswordRegister") Powtórz hasło:
+                    input(type="text" id="repeatPasswordRegister")
+            div.row
+                div.col-12
+                    label(for="emailRegister") E-mail:
+                    input(type="email" id="emailRegister")
+            div.row.text-right.margin-top
+                div.col-12
+                    button(type="button" class="btn btn--cancel modalCancel") Anuluj
+                    button(type="submit" class="btn margin-left") Utwórz

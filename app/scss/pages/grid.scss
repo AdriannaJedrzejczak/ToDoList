@@ -1,0 +1,46 @@
+$page-spacing: 40px;
+$grid-column: 12;
+$grid-spacing: 20px;
+
+.page-row {
+    display: block;
+    height: auto;
+    max-width: 1346px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $page-spacing;
+    padding-right: $page-spacing;
+
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.row {
+    margin-left: -$grid-spacing;
+    margin-right: -$grid-spacing;
+
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@for $i from 1 through $grid-column {
+    .col-#{$i} {
+        width: $i / $grid-column * 100%;
+    }
+}
+
+[class*="col-"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding-left: $grid-spacing;
+    padding-right: $grid-spacing;
+    position: relative;
+    min-height: 1px;
+}

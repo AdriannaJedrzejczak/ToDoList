@@ -1,0 +1,45 @@
+.btn {
+    text-align: center;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    background: $color-green1;
+    border: 3px solid $color-green1;
+    color: $color-white;
+    padding: 5px 10px;
+    transition: background .2s ease,color .2s ease,border-color .2s ease;
+
+    &:hover, &:focus {
+        color: $color-black;
+        background: $color-white
+    }
+
+    &--cancel {
+        background: $color-black;
+        border: 3px solid $color-black;
+        color: $color-white;
+
+        &:hover, &:focus {
+            background: $color-white;
+            color: $color-black;
+        }
+    }
+
+    &--medium {
+        width: 150px;
+        height: 45px;
+    }
+
+    &--big {
+        width: 40%;
+        height: 60px;
+        font-size: 25px;
+
+        @media screen and (max-width: $break-small) {
+            font-size: 18px;
+        }
+    }
+}

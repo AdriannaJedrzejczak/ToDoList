@@ -1,0 +1,29 @@
+.modal {
+	position: fixed;
+	display: none;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 999;
+
+	&__content {
+		display: none;
+		position: absolute;
+		top: 80px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 400px;
+		padding: 20px;
+		opacity: 0.2;
+		background: white;
+		box-sizing: border-box;
+
+		&.in {
+			display: block;
+			transition: 0.3s;
+			opacity: 1;
+		}
+	}
+}

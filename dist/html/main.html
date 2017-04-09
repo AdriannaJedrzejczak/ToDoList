@@ -1,0 +1,127 @@
+
+<html lang="">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="ToDoList"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="row">
+        <div class="col-4">
+          <h3 style="color: gray; font-size: 40px; margin: 0;">LOGO</h3>
+        </div>
+        <div class="col-8 text-right small-hide">
+          <button data-modal="#modalRegister" class="btn btn--medium modalClicker">Utwórz konto</button>
+          <button id="loginButton" data-modal="#modalLogin" class="modalClicker btn btn--medium margin-left">Zaloguj</button>
+        </div>
+        <div class="col-8 text-right large-hide">
+          <button id="menu-hamburger" class="navigation__hamburger">&#9776;</button>
+        </div>
+      </div>
+      <div id="menu" class="navigation__menu">
+        <ul>
+          <li> 
+            <button data-modal="#modalRegister" class="btn btn--medium w-small-100 modalClicker">Utwórz konto</button>
+          </li>
+          <li> 
+            <button id="loginButton" data-modal="#modalLogin" class="modalClicker btn btn--medium w-small-100">Zaloguj</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="row main__content">
+        <div class="col-12">
+          <h1>LOGO DuDay</h1>
+          <h2 class="h3 text-bold">
+            Aplikacja ma na celu ułożyć twój dzień.
+            Została przez nas stworzona w celu porządkowania obowiązków.
+            Zacznij korzystac już dzisiaj i załóż konto
+          </h2>
+          <p>Jeśli nie masz jeszcze konta to załóż je już teraz całkowicie za darmo</p>
+          <button data-modal="#modalRegister" class="btn btn--big modalClicker w-small-100">Zarejestruj się</button>
+          <p>lub jeśli posiadasz już konto</p>
+          <button data-modal="#modalLogin" class="btn btn--big modalClicker w-small-100">Zaloguj się</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__content">
+        <p>@Copyright DuDay  ---- Wszystkie prawa zastrzeżone</p>
+      </div>
+    </div>
+    <div id="modalWrapper" class="modal">
+      <div id="modalLogin" class="modal__content">
+        <h2 class="margin-bottom-big">Logowanie</h2>
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <label for="userNameLogin">Login:</label>
+              <input type="text" id="userNameLogin"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="passwordLogin">Hasło:</label>
+              <input type="text" id="passwordLogin"/>
+            </div>
+          </div><a href="#">Zapomniane hasło?</a>
+          <div class="row text-right margin-top">
+            <div class="col col-12">
+              <button type="button" class="btn btn--cancel modalCancel">Anuluj</button>
+              <button type="submit" class="btn margin-left">Zaloguj</button>
+            </div>
+          </div>
+        </form>
+        <hr class="margin-top-big margin-bottom-big"/>
+        <h3 class="h4">Nie masz jeszcze konta?</h3>
+        <div class="row text-right">
+          <div class="col-12">
+            <button data-modal="#modalRegister" class="btn btn--medium modalClicker">Utwórz konto</button>
+          </div>
+        </div>
+      </div>
+      <div id="modalRegister" class="modal__content">
+        <h2 class="margin-bottom-big">Rejestracja</h2>
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <label for="userNameRegister">Login:</label>
+              <input type="text" id="userNameRegister"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="passwordRegister">Hasło:</label>
+              <input type="text" id="passwordRegister"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="repeatPasswordRegister">Powtórz hasło:</label>
+              <input type="text" id="repeatPasswordRegister"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="emailRegister">E-mail:</label>
+              <input type="email" id="emailRegister"/>
+            </div>
+          </div>
+          <div class="row text-right margin-top">
+            <div class="col-12">
+              <button type="button" class="btn btn--cancel modalCancel">Anuluj</button>
+              <button type="submit" class="btn margin-left">Utwórz</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

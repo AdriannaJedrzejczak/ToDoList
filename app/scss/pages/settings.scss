@@ -1,0 +1,163 @@
+$break-small: 767px;
+
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(55, 55, 55);
+$color-gray1: #efefef;
+$color-green1: #61b14f;
+$color-violet1: #5151d2;
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    margin: 0;
+    color: #666;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+}
+
+h1, .h1 {
+    font-size: 3.0em;
+
+    @media screen and (max-width: $break-small) {
+        font-size: 2.0em;
+    }
+}
+
+h2, .h2 {
+    font-size: 2.5em;
+
+    @media screen and (max-width: $break-small) {
+        font-size: 1.667em;
+    }
+}
+
+h3, .h3 {
+    font-size: 2.0em;
+    
+    @media screen and (max-width: $break-small) {
+        font-size: 1.333em;
+    }
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+
+    @media screen and (max-width: $break-small) {
+        font-size: 1.0em;
+    }
+}
+
+h5, .h5 {
+    font-size: 1.0em;
+
+    @media screen and (max-width: $break-small) {
+        font-size: 0.667em;
+    }
+}
+
+a {
+    color: gray;
+}
+
+input {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    color: #444;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 7px 10px;
+    margin: 0px 0px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: normal;
+    min-height: 31px;
+    transition: background .2s ease,color .2s ease,border-color .2s ease;
+
+    &:focus {
+        border-color: $color-green1;
+        outline: none;
+    }
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-top-big {
+    margin-top: 40px;
+}
+
+.margin-bottom-big {
+    margin-bottom: 40px;
+}
+
+.margin-right-big {
+    margin-right: 40px;
+}
+
+.margin-left-big {
+    margin-left: 40px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w-small-100 {
+    @media screen and (max-width: $break-small) {
+        width: 100% !important;
+    }
+}
+
+.small-hide {
+    @media screen and (max-width: $break-small) {
+        display: none;
+    }
+}
+
+.large-hide {
+    @media screen and (min-width: $break-small + 1) {
+        display: none;
+    }
+}

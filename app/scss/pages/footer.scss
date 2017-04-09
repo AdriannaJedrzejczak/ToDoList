@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    background: $color-violet1;
+
+    &__content {
+        color: $color-white;
+        text-align: center;
+
+        .row {
+            width: 100%;
+        }
+    }
+}
