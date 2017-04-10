@@ -29,6 +29,21 @@ $grid-spacing: 20px;
     }
 }
 
+.table-row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    & > .col {
+        display: table-cell;
+        float: none;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
 @for $i from 1 through $grid-column {
     .col-#{$i} {
         width: $i / $grid-column * 100%;

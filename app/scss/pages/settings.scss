@@ -152,12 +152,12 @@ label {
 
 .small-hide {
     @media screen and (max-width: $break-small) {
-        display: none;
+        display: none !important;
     }
 }
 
 .large-hide {
     @media screen and (min-width: $break-small + 1) {
-        display: none;
+        display: none !important;
     }
 }

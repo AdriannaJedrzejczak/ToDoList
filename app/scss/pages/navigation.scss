@@ -2,18 +2,16 @@ $menu-height: 80px;
 
 .navigation {
     position: fixed;
-    display: table;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: $menu-height;
     background: $color-gray1;
     z-index: 10;
     box-sizing: border-box;
 
-    & > .row {
-        display: table-cell;
-        vertical-align: middle;
+    > .row {
+        height: 100%;
     }
 
     &__hamburger {
@@ -25,26 +23,28 @@ $menu-height: 80px;
         height: 45px;
         font-size: 20px;
     }
-}
 
-.navigation__menu {
-    display: none;
-    position: absolute;
-    top: $menu-height;
-    left: 0;
-    width: 100%;
-    background: $color-white;
-    z-index: 10;
+    &__menu {
+        display: none;
+        position: absolute;
+        top: $menu-height;
+        left: 0;
+        width: 100%;
+        background: $color-white;
+        z-index: 10;
 
-    > ul {
-        padding: 0;
-        margin: 0;
-
-        > li {
+        > ul {
             padding: 0;
-            margin-bottom: 1px;
+            margin: 0;
+
+            > li {
+                padding: 0;
+                margin-bottom: 1px;
+            }
         }
     }
 }
+
+
 
 
