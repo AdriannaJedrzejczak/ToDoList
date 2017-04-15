@@ -381,6 +381,8 @@ label {
     @media screen and (max-width: 767px) {
       .main p {
         font-size: 1.2em; } }
+  .main ul li {
+    margin-bottom: 10px; }
   .main__content {
     margin: 0 auto;
     max-width: 800px; }
