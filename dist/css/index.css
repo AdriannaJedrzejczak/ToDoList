@@ -91,6 +91,18 @@ label {
 .margin-left-big {
   margin-left: 40px; }
 
+.no-margin-top {
+  margin-top: 0 !important; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
+
+.no-margin-right {
+  margin-right: 0 !important; }
+
+.no-margin-left {
+  margin-left: 0 !important; }
+
 .left {
   float: left; }
 
@@ -221,6 +233,9 @@ label {
       display: block;
       transition: 0.3s;
       opacity: 1; }
+
+.blured {
+  filter: blur(3px); }
 
 .btn {
   text-align: center;

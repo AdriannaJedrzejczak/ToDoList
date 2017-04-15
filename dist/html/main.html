@@ -69,7 +69,7 @@
               <label for="passwordLogin">Hasło:</label>
               <input type="text" id="passwordLogin"/>
             </div>
-          </div><a href="#">Zapomniane hasło?</a>
+          </div><a href="#" data-modal="#modalForgottenPassw" class="modalClicker">Zapomniane hasło?</a>
           <div class="row text-right margin-top">
             <div class="col col-12">
               <button type="button" class="btn btn--cancel modalCancel">Anuluj</button>
@@ -116,6 +116,44 @@
             <div class="col-12">
               <button type="button" class="btn btn--cancel modalCancel">Anuluj</button>
               <button type="submit" class="btn margin-left">Utwórz</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="modalForgottenPassw" class="modal__content">
+        <h2 class="margin-bottom-big">Zapomniane hasło</h2>
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <label for="userNameRegister">E-mail:</label>
+              <input type="text" id="userNameRegister"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p>Powyżej wprowadź adres e-mail na który zostało utworzone twoje konto.</p>
+            </div>
+          </div>
+          <div class="row text-right margin-top">
+            <div class="col-12">
+              <button type="button" data-modal="#modalLogin" class="btn btn--cancel modalClicker">Powrót</button>
+              <button type="submit" data-modal="#modalConfirmation" class="btn margin-left modalClicker">Utwórz</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="modalConfirmation" class="modal__content">
+        <h2 class="margin-bottom-big">Potwierdzenie</h2>
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <p class="h4 no-margin-top">Na twój adres e-mail została wysłana wiadomość z nowym hasłem.</p>
+              <p class="h4">Sprawdź swoją pocztę i zaloguj się ponownie!</p>
+            </div>
+          </div>
+          <div class="row text-right margin-top">
+            <div class="col-12">
+              <button type="button" class="btn modalCancel">Zamknij</button>
             </div>
           </div>
         </form>

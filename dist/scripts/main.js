@@ -23,20 +23,28 @@ modalLists.on('click', function() {
     content.addClass("in");
 })
 
-modalBtnCancel.on('click', function() {
+modalBtnCancel.on('click', closeModal)
+
+modalWrapper.on('click', function(e) {
+    if(this === e.target) {
+        closeModal();
+    }
+})
+
+function closeModal() {
     removeBlur(contentElements);
     modalContent.removeClass("in");
     modalWrapper.fadeOut('fast');
-})
+}
 
 function addBlur(items) {
     $(items).each(function(){
-        this.css('filter', 'blur(3px)')
+        this.addClass("blured");
     });
 }
 
 function removeBlur(items) {
     $(items).each(function(){
-        this.css('filter', 'blur(0)')
+        this.removeClass("blured");
     });
 }

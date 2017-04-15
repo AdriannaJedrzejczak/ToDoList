@@ -11,7 +11,7 @@ div(class="modal" id="modalWrapper")
                     label(for="passwordLogin") Hasło:
                     input(type="text" id="passwordLogin")
 
-            a(href="#") Zapomniane hasło?
+            a(href="#" class="modalClicker" data-modal="#modalForgottenPassw") Zapomniane hasło?
             div.row.text-right.margin-top
                 div.col.col-12
                     button(type="button" class="btn btn--cancel modalCancel") Anuluj
@@ -47,3 +47,31 @@ div(class="modal" id="modalWrapper")
                 div.col-12
                     button(type="button" class="btn btn--cancel modalCancel") Anuluj
                     button(type="submit" class="btn margin-left") Utwórz
+
+    div(class="modal__content" id="modalForgottenPassw")
+        h2.margin-bottom-big Zapomniane hasło
+        form
+            div.row
+                div.col-12
+                    label(for="userNameRegister") E-mail:
+                    input(type="text" id="userNameRegister")
+            div.row
+                div.col-12
+                    p Powyżej wprowadź adres e-mail na który zostało utworzone twoje konto.
+            div.row.text-right.margin-top
+                div.col-12
+                    button(type="button" class="btn btn--cancel modalClicker" data-modal="#modalLogin") Powrót
+                    button(type="submit" class="btn margin-left modalClicker" data-modal="#modalConfirmation") Utwórz
+
+    div(class="modal__content" id="modalConfirmation")
+        h2.margin-bottom-big Potwierdzenie
+        form
+            div.row
+                div.col-12
+                    p.h4.no-margin-top Na twój adres e-mail została wysłana wiadomość z nowym hasłem.
+                    p.h4 Sprawdź swoją pocztę i zaloguj się ponownie!
+            div.row.text-right.margin-top
+                div.col-12
+                    button(type="button" class="btn modalCancel") Zamknij
+            
+            
