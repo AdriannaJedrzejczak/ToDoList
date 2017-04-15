@@ -48,6 +48,12 @@ $grid-spacing: 20px;
     .col-#{$i} {
         width: $i / $grid-column * 100%;
     }
+
+    @media screen and (max-width: $break-small) {
+        .col-sm-#{$i} {
+            width: $i / $grid-column * 100%;
+        }
+    }
 }
 
 [class*="col-"] {

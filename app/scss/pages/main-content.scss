@@ -1,7 +1,14 @@
 .main {
-    margin: 120px 0;
+    display: flex;
+    align-items: center;
+    padding: 120px 40px;
+    @media screen and (max-width: $break-small) {
+        padding: 90px 0;
+    }
     width: 100%;
-    height: auto;
+    @media screen and (min-width: $break-large) {
+        height: 100vh;
+    }
     text-align:center;
     box-sizing: border-box;
 
@@ -16,5 +23,13 @@
     &__content {
         margin: 0 auto;
         max-width: 800px;
+
+        &--second {
+            color: $color-white;
+        }
+    }
+
+    .fa {
+        font-size: 400px;
     }
 }

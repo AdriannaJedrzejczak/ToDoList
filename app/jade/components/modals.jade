@@ -11,7 +11,7 @@ div(class="modal" id="modalWrapper")
                     label(for="passwordLogin") Hasło:
                     input(type="text" id="passwordLogin")
 
-            a(href="#" class="modalClicker" data-modal="#modalForgottenPassw") Zapomniane hasło?
+            button(href="#" class="btn--link modalClicker" data-modal="#modalForgottenPassw") Zapomniane hasło?
             div.row.text-right.margin-top
                 div.col.col-12
                     button(type="button" class="btn btn--cancel modalCancel") Anuluj
@@ -61,7 +61,7 @@ div(class="modal" id="modalWrapper")
             div.row.text-right.margin-top
                 div.col-12
                     button(type="button" class="btn btn--cancel modalClicker" data-modal="#modalLogin") Powrót
-                    button(type="submit" class="btn margin-left modalClicker" data-modal="#modalConfirmation") Utwórz
+                    button(type="submit" class="btn margin-left modalClicker" data-modal="#modalConfirmation") Wyślij
 
     div(class="modal__content" id="modalConfirmation")
         h2.margin-bottom-big Potwierdzenie

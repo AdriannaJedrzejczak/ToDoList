@@ -1,11 +1,23 @@
 div.main
-    div.row.table-row.main__content
+    div.row.main__content
         div.col.col-12
             h1 LOGO DuDay
-            h2.h3.text-bold Aplikacja ma na celu ułożyć twój dzień.
+            h2.h3 Aplikacja ma na celu ułożyć twój dzień.
                 |Została przez nas stworzona w celu porządkowania obowiązków.
                 |Zacznij korzystac już dzisiaj i załóż konto
             p Jeśli nie masz jeszcze konta to załóż je już teraz całkowicie za darmo
             button(class="btn btn--big modalClicker w-small-100" data-modal="#modalRegister") Zarejestruj się
             p lub jeśli posiadasz już konto
             button(class="btn btn--big modalClicker w-small-100" data-modal="#modalLogin") Zaloguj się
+
+div(class="main" style="background: #0079bf;")
+    div.row.table-row.main__content--second
+        div.col.col-5.small-hide
+            i(class="fa fa-hand-o-right" aria-hidden="true")
+        div.col.col-7.col-sm-12
+            h2.h1 Jak to działa?
+            p.h2 W naszej aplikacji zostały stworzone funkcje pozwalające zarządzać dziennymi obowiązkami:
+            ul.h3
+                li Możesz dodać obowiązki na wiele dni do przodu, a aplikacja Ci o nich przypomni, gdy termin będzie się zbliżal
+                li Każdy obowiązek możesz dodać w określonych ramach czasowych
+                li Dla każdego obowiązku możesz ustanowić priorytet, co umożliwi segregacje zadań i wykonanie w pierwszej kolejności tych ważniejszych

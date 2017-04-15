@@ -42,4 +42,13 @@
             font-size: 18px;
         }
     }
+
+    &--link {
+        border: none;
+        outline: none;
+        background: white;
+        text-decoration: underline;
+        color: gray;
+        cursor: pointer;
+    }
 }

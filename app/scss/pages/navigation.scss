@@ -1,4 +1,4 @@
-$menu-height: 80px;
+$menu-height: 80px; 
 
 .navigation {
     position: fixed;
@@ -6,6 +6,9 @@ $menu-height: 80px;
     left: 0;
     width: 100%;
     height: $menu-height;
+    @media screen and (max-width: $break-small) {
+        height: 60px
+    }
     background: $color-gray1;
     z-index: 10;
     box-sizing: border-box;

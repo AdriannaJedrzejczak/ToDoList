@@ -1,10 +1,11 @@
 $break-small: 767px;
+$break-large: 1024px;
 
 $color-white: rgb(255, 255, 255);
 $color-black: rgb(55, 55, 55);
 $color-gray1: #efefef;
 $color-green1: #61b14f;
-$color-violet1: #5151d2;
+$color-violet1: #2e2e80;
 
 body {
     overflow-x: hidden;
@@ -19,42 +20,42 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, .h1 {
-    font-size: 3.0em;
+    font-size: 3.0em !important;
 
     @media screen and (max-width: $break-small) {
-        font-size: 2.0em;
+        font-size: 2.0em !important;
     }
 }
 
 h2, .h2 {
-    font-size: 2.5em;
+    font-size: 2.5em !important;
 
     @media screen and (max-width: $break-small) {
-        font-size: 1.667em;
+        font-size: 1.667em !important;
     }
 }
 
 h3, .h3 {
-    font-size: 2.0em;
+    font-size: 2.0em !important;
     
     @media screen and (max-width: $break-small) {
-        font-size: 1.333em;
+        font-size: 1.333em !important;
     }
 }
 
 h4, .h4 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
 
     @media screen and (max-width: $break-small) {
-        font-size: 1.0em;
+        font-size: 1.0em !important;
     }
 }
 
 h5, .h5 {
-    font-size: 1.0em;
+    font-size: 1.0em !important;
 
     @media screen and (max-width: $break-small) {
-        font-size: 0.667em;
+        font-size: 0.667em !important;
     }
 }
 
