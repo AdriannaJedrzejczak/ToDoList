@@ -1,16 +1,6 @@
 .main {
-    display: flex;
-    align-items: center;
-    padding: 120px 40px;
-    @media screen and (max-width: $break-small) {
-        padding: 90px 0;
-    }
-    width: 100%;
-    @media screen and (min-width: $break-large) {
-        height: 100vh;
-    }
     text-align:center;
-    box-sizing: border-box;
+    padding-right: 50px;
 
     p {
         font-size: 1.5em;
@@ -21,9 +11,7 @@
     }
 
     ul {
-        li {
-            margin-bottom: 10px;
-        }
+        padding: 0 50px;
     }
 
     &__content {
@@ -36,6 +24,31 @@
     }
 
     .fa {
-        font-size: 400px;
+        font-size: 350px;
     }
 }
+
+.section-header {
+    position: absolute;
+    top: 150px;
+
+    @media screen and (max-width: $break-small) {
+        top: 50px;
+    }
+}
+
+#section1 {
+    padding-top: 150px;
+
+    @media screen and (max-width: $break-small) {
+        padding-top: 120px;
+    }
+}
+
+#section2 {
+    position: relative;
+    background-image: url(../images/parallax-1-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+

@@ -67,6 +67,9 @@ label {
   padding-top: 10px;
   margin-bottom: 5px; }
 
+.black-shadow {
+  text-shadow: 2px 2px #373737; }
+
 .margin-top {
   margin-top: 20px; }
 
@@ -364,36 +367,46 @@ label {
         margin-bottom: 1px; }
 
 .main {
-  display: flex;
-  align-items: center;
-  padding: 120px 40px;
-  width: 100%;
   text-align: center;
-  box-sizing: border-box; }
-  @media screen and (max-width: 767px) {
-    .main {
-      padding: 90px 0; } }
-  @media screen and (min-width: 1024px) {
-    .main {
-      height: 100vh; } }
+  padding-right: 50px; }
   .main p {
     font-size: 1.5em; }
     @media screen and (max-width: 767px) {
       .main p {
         font-size: 1.2em; } }
-  .main ul li {
-    margin-bottom: 10px; }
+  .main ul {
+    padding: 0 50px; }
   .main__content {
     margin: 0 auto;
     max-width: 800px; }
     .main__content--second {
       color: white; }
   .main .fa {
-    font-size: 400px; }
+    font-size: 350px; }
+
+.section-header {
+  position: absolute;
+  top: 150px; }
+  @media screen and (max-width: 767px) {
+    .section-header {
+      top: 50px; } }
+
+#section1 {
+  padding-top: 150px; }
+  @media screen and (max-width: 767px) {
+    #section1 {
+      padding-top: 120px; } }
+
+#section2 {
+  position: relative;
+  background-image: url(../images/parallax-1-1.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .footer {
   position: absolute;
   width: 100%;
+  bottom: 0;
   left: 0;
   box-sizing: border-box;
   background: #2e2e80; }
